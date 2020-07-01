@@ -13,10 +13,10 @@ app.use(bodyParser.urlencoded({extended: true}))
 app.use(express.static("public"));
 
 
-const mongoURL = process.env.MONGO_URL;
+// const mongoURL = process.env.MONGO_URL;
 
 // Set up mongoDB, Mongoose and Schema for blog posts
-mongoose.connect(mongoURL, {
+mongoose.connect("mongodb+srv://admin-will:blog_app135@cluster0.e4oka.mongodb.net/blogDB", {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
