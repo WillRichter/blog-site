@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({extended: true}))
 app.use(express.static("public"));
 
 
-const mongoURL = process.env.URL;
+const mongoURL = String(process.env.URL);
 
 // Set up mongoDB, Mongoose and Schema for blog posts
 mongoose.connect(mongoURL, {
