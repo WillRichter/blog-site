@@ -1,5 +1,5 @@
 // Set up required packages
-require("dotenv").config();
+const dotenv = require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
@@ -13,9 +13,10 @@ app.use(bodyParser.urlencoded({extended: true}))
 app.use(express.static("public"));
 
 
+const mongoURL = process.env.URL;
 
 // Set up mongoDB, Mongoose and Schema for blog posts
-mongoose.connect(process.env.URL, {
+mongoose.connect(mongoURL, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
