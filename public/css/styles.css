@@ -1,0 +1,64 @@
+/* Remove margin and padding from site and set font style */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    padding-bottom: 120px;
+}
+
+/* Container padding */
+.container {
+    padding-top: 25px;
+}
+
+/* Styling for Navbar */
+.navbar{
+    background-color: #95e1d3;
+    padding: 1%;
+    font-size: 1.5rem;
+}
+
+.brand-size{
+    font-size: 1.5rem;
+}
+
+/* Remove top margin for headings */
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+}
+
+/* Styling for footer */
+.footer{
+    text-align: center;
+    font-size: 1rem;
+    color: grey;
+
+}
+
+footer{
+    position: absolute;
+    background-color: #bf1363;
+    position: absolute;
+}
+
+/* Form Styling  */
+.form-control{
+    width: 50%;
+    margin-bottom: 0.5rem;
+}
+
+/* Styling for Blog Post Cards */
+.card {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px #000000;
+}
+
+/* Center Items */
+.center{
+    text-align: center;
+}
+

@@ -1,0 +1,22 @@
+<%- include('partials/header'); -%>
+
+        <h1 class="center">Blog Site</h1>
+
+        <% if(posts.length < 1){ %>
+          <h2 class="center">No posts yet :(</h2>
+          <%} else { %>
+          <% posts.forEach(function(post){ %>
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"><%=post.title%></h5>
+                  <p class="card-text"><%=post.content.slice(0,100)%>.....</p>
+                  <a href="/blog/<%=post.id%>" class="btn btn-dark">Read More</a>
+                </div>
+            </div>
+          <% }); %>  
+        <% } %>
+
+
+
+
+<%- include('partials/footer'); -%>
