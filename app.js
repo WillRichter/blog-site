@@ -1,5 +1,4 @@
 // Set up required packages
-require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
