@@ -12,10 +12,10 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(express.static("public"));
 
-const url = process.env.URL;
+
 
 // Set up mongoDB, Mongoose and Schema for blog posts
-mongoose.connect(String(url), {
+mongoose.connect(process.env.URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
