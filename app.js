@@ -7,7 +7,6 @@ const mongoose = require("mongoose");
 
 app = express();
 
-
 // Set up ejs, bodyParser, and static folder
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended: true}))
@@ -16,7 +15,7 @@ app.use(express.static("public"));
 const url = process.env.URL;
 
 // Set up mongoDB, Mongoose and Schema for blog posts
-mongoose.connect(url, {
+mongoose.connect(String(url), {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
